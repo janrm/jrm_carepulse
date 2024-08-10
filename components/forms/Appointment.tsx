@@ -43,7 +43,7 @@ interface AppointmentFormProps {
     patientId : string,
     type : 'create' | 'cancel' | 'schedule' | 'pending'
     appointment?: Appointment
-    setOpen: (open : boolean) => void
+    setOpen?: (open : boolean) => void
 }
 
 const AppointmentForm = ({userId, patientId, type, appointment, setOpen, dict}: AppointmentFormProps, params : {lang : string }) => {

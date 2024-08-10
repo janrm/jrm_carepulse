@@ -3,12 +3,13 @@ import {getDictionary} from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 import AppointmentForm from "@/components/forms/Appointment";
 import {getPatient} from "@/lib/actions/patient.actions";
+import * as Sentry from '@sentry/nextjs';
 
 // @ts-ignore
 export default async function  NewAppointment({params: {userId, lang }} : SearchParamProps) {
     const dict = await getDictionary(lang);
     const patient = await getPatient(userId);
-
+    Sentry.metrics.set("user_view_new-appointment", patient.name)
     return (
         <div className="flex h-screen max-h-screen">
             {/* TODO: OTP Verification | PasskeyModal */}

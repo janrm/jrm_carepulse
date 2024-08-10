@@ -6,10 +6,12 @@ import Link from "next/link";
 import {getDictionary} from "@/app/[lang]/dictionaries";
 import RegisterForm from "@/components/forms/RegisterForm";
 import {getUser} from "@/lib/actions/patient.actions";
+import * as Sentry from '@sentry/nextjs';
 
 const Register = async ({params: {lang, userId}} : SearchParamProps) => {
     const user = await getUser(userId);
     const dict = await getDictionary(lang)
+    Sentry.metrics.set("user_view_register", user.name)
     return (
         <div className="flex h-screen max-h-screen">
             {/* TODO: OTP Verification | PasskeyModal */}
