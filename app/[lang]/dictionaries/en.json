@@ -1,0 +1,65 @@
+{
+  "admin": {
+    "title": "Administrator"
+  },
+  "home" : {
+    "logo" : {
+      "src" : "/assets/icons/logo-full.svg",
+      "alt" : "Carepulse Logo",
+      "size": 1000
+    }
+  },
+  "patientForm" : {
+    "title" : "Hi there!!!",
+    "subTitle" : "Schedule your first appointment",
+    "userNameField" : {
+      "label" : "Full name",
+      "placeholder": "Enter your username",
+      "disabled" : false
+    },
+    "emailField" : {
+      "label" : "Email",
+      "placeholder": "Enter your email address",
+      "disabled" : false
+    },
+    "phoneNumberField" : {
+      "label" : "Phone Number",
+      "placeholder": "+31 123 456789",
+      "disabled" : false
+    },
+    "button" : {
+      "text" : "Get Started"
+    }
+  },
+    "registerForm" : {
+      "title" : "Register",
+      "subTitle" : "Please enter your details",
+      "userNameField" : {
+        "label" : "Full name",
+        "placeholder": "Enter your username",
+        "disabled" : false
+      },
+      "emailField" : {
+        "label" : "Email",
+        "placeholder": "Enter your email address",
+        "disabled" : false
+      },
+      "phoneNumberField" : {
+        "label" : "Phone Number",
+        "placeholder": "+31 123 456789",
+        "disabled" : false
+      },
+      "genderField" : {
+        "label" : "Gender",
+        "disabled" : false
+      },
+      "birthDateField" : {
+        "label" : "Date of Birth",
+        "disabled" : false
+      },
+      "button" : {
+        "text" : "Get Started"
+      }
+  },
+  "copyright" : "© 2024, CarePulse"
+}
